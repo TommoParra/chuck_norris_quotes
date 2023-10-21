@@ -1,0 +1,79 @@
+
+.wrapper {
+    position: relative;
+    display: var(--wrapperDisplay);
+    grid-template-rows: var(--wrapperGTR);
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("../img/bg_chuck.jpg");
+    background-position: top left;
+    background-size: cover;
+}
+
+.filter {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: .8;
+}
+
+.cuck_phrase_container {
+    display: flex;
+    max-width: var(--phraseMaxWidth);
+    gap: 1.5rem;
+    margin: auto;
+    z-index: 2;
+}
+
+.quote_symbol {
+    width: var(--quoteSymbolWidth);
+    height: auto;
+    margin: 0px auto auto auto;
+}
+
+.chuck_phrase {
+    margin: auto;
+    padding-bottom: 20px;
+    font-family: 'Style Script', cursive;
+    font-size: var(--phraseFontSize);
+    line-height: 1.5;
+    color: white;
+}
+
+
+
+.load_phrase_btn {
+    position: var(--load_btn_possition);
+    width: var(--load_btn_width);
+    height: var(--load_btn_height);
+    bottom: 10%;
+    right: 10%;
+    padding: 1rem 2rem;
+    margin: var(--load_btn_margin);
+    border-top: white 10px solid;
+    border-right: 10px transparent solid;
+    border-bottom: white 10px solid;
+    border-left: 10px transparent solid;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-style: italic;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+    z-index: 1;
+
+}
+
+.load_phrase_btn:hover {
+    background-color: white;
+    border-top: 10px transparent solid;
+    border-right: black 10px solid;
+    border-bottom: 10px transparent solid;
+    border-left: black 10px solid;
+    color: black;
+}

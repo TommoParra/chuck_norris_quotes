@@ -1,0 +1,26 @@
+/* Google Fonts: Style Script and Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&family=Style+Script&display=swap');
+
+:root {
+  --phraseFontSize: 2.2rem;
+  --wrapperDisplay: grid;
+  --wrapperGTC: 1fr min-content;
+  --load_btn_possition: static;
+  --load_btn_possition: static;
+  --load_btn_width: max-content;
+  --load_btn_height: min-content;
+  --load_btn_margin: auto auto 20px auto;
+  --quoteSymbolWidth: 50px;
+  --phraseMaxWidth: 90%;
+}
+
+  @media (width > 600px) {
+    :root {
+      --phraseFontSize: 3rem;
+      --wrapperDisplay: flex;
+      --wrapperGTC: unset;
+      --load_btn_possition: absolute;
+      --quoteSymbolWidth: 80px;
+      --phraseMaxWidth: 70%;
+    }
+  }
